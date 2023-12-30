@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from '../App';
+import Welcome from '@pages/Welcome.js';
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>
+        element: <Welcome/>
     }
 ]);
 
