@@ -17,7 +17,8 @@ module.exports = {
         bgLight: "#fff",
         bgDark: "#222",
         bgPrimary: "#336EC9",
-        bgSecondary: "#E8B113"
+        bgSecondary: "#E8B113",
+        bgTertiary: "transparent"
       }
     },
   },
