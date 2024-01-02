@@ -5,7 +5,21 @@ module.exports = {
     fontFamily: {
       'inter': ['Inter', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#336EC9",
+        secondary: "#E8B113",
+        text: "#666",
+        pageTitle: "#222",
+        pageTitleDark: "#fff"
+      },
+      backgroundColor: {
+        bgLight: "#fff",
+        bgDark: "#222",
+        bgPrimary: "#336EC9",
+        bgSecondary: "#E8B113"
+      }
+    },
   },
   plugins: [],
 }
