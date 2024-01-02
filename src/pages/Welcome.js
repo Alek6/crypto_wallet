@@ -1,3 +1,5 @@
+import Button from "@atoms/Button";
+
 function Welcome() {
   return (
     <div className="h-screen bg-bgLight flex flex-col justify-center">
@@ -9,12 +11,9 @@ function Welcome() {
         </h1>
       </header>
       <div className="mt-20 flex flex-col items-center justify-center gap-4">
-        <button className="w-48">
-          <a href="" className="w-full bg-bgPrimary shadow-xl text-secondary flex justify-center items-center py-3 rounded-3xl text-2xl font-bold uppercase">Log in</a>
-        </button>
-        <a href="" className="uppercase text-primary text-xl">Sign up</a>
+        <Button type="primary">Log in</Button>
+        <a to="" className="uppercase text-primary text-xl">Sign up</a>
       </div>
-
     </div>
   );
 }
