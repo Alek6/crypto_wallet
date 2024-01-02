@@ -7,7 +7,7 @@ module.exports = function ovveride(config) {
         '@layout': 'src/layout',
         '@atoms': 'src/components/atoms',
         '@molecules': 'src/components/molecules',
-        '@organism': 'src/components/organism',
+        '@organisms': 'src/components/organisms',
     })(config);
 
     return config;
