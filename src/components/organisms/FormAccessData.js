@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Button from '@atoms/Button';
 import FormInput from '@molecules/FormInput';
 
-export default function Form() {
+export default function FormAccessData() {
     return (
         <form className="flex flex-1 flex-col justify-between gap-5 mt-6">
             <div className="flex flex-col items-center justify-center gap-5 mt-6">
@@ -11,7 +11,7 @@ export default function Form() {
                 <FormInput id="confirm-password" text="Confirm your password" placeholder="Confirm your password" type="password" autoComplete="new-password" required={true} />
             </div>
             <div className="text-center flex flex-col items-center mb-6">
-                <Button type="primary">next</Button>
+                <Button to="/register/user-data" type="primary">next</Button>
                 <Link to="/login" className="uppercase text-primary text-xl mt-4">Log in</Link>
             </div>
         </form>

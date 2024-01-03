@@ -4,7 +4,7 @@ module.exports = function ovveride(config) {
     alias({
         '@icons': 'src/icons',
         '@pages': 'src/pages',
-        '@layout': 'src/layout',
+        '@layouts': 'src/layouts',
         '@atoms': 'src/components/atoms',
         '@molecules': 'src/components/molecules',
         '@organisms': 'src/components/organisms',
