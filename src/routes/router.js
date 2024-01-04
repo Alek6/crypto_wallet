@@ -5,6 +5,7 @@ import Welcome from '@pages/Welcome.js';
 import AccessData from "@pages/Register/AccessData";
 import UserData from "@pages/Register/UserData";
 import UploadDocuments from "@pages/Register/UploadDocuments";
+import Login from "@pages/Login/Login";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
                 element: <UploadDocuments/>
             }
         ]
+    },
+    {
+        path: '/login',
+        element: <Login/>
     }
 ]);
 
