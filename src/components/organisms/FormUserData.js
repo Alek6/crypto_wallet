@@ -15,7 +15,7 @@ export default function FormUserData() {
                 </div>
             </div>
             <div className="text-center flex flex-col items-center mb-6">
-                <Button to="/register/user-data" type="primary">next</Button>
+                <Button to="/register/upload-documents" type="primary">next</Button>
             </div>
         </form>
     )
