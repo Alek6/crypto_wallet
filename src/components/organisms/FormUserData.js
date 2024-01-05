@@ -5,7 +5,7 @@ export default function FormUserData() {
     return (
         <form className="flex flex-1 flex-col justify-between gap-5 mt-6">
             <div className="flex flex-col items-center justify-center gap-5 mt-6">
-                <FormInput id="name" text="Name" placeholder="Enter your name" type="text" maxLength="15" required={true} />
+                <FormInput id="name" text="Name" placeholder="Enter your name" type="text" maxLength="25" required={true} />
                 <FormInput id="surname" text="Surname" placeholder="Enter your surname" type="text" maxLength="25" required={true} />
                 <FormInput id="birthday" text="Birthday" placeholder="dd/mm/yyyy" type="date" maxLength="10" required={true} />
                 <FormInput id="address" text="Address" placeholder="Insert your address" type="text" maxLength="50" required={true} />

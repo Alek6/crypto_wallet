@@ -9,13 +9,13 @@ module.exports = {
       colors: {
         primary: "#336EC9",
         secondary: "#E8B113",
-        text: "#666",
-        pageTitle: "#222",
+        text: "#888",
+        pageTitle: "#313131",
         pageTitleDark: "#fff"
       },
       backgroundColor: {
-        bgLight: "#fff",
-        bgDark: "#222",
+        bgLight: "#f6f6f9",
+        bgDark: "#313131",
         bgPrimary: "#336EC9",
         bgSecondary: "#E8B113",
         bgTertiary: "transparent"
