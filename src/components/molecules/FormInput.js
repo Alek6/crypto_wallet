@@ -1,7 +1,7 @@
 import Label from "@atoms/Label";
 import Input from '@atoms/Input';
 
-export default function FormInput({id, text, placeholder, type='text', value='', required='false', width='large', maxLength='', rock='text', accept='image/*, .pdf' }) {
+export default function FormInput({id, text, placeholder, type='text', value='', required='false', width='large', maxLength='', rock='text', accept='image/*, .pdf', min='', max='', pattern}) {
     const styles = {
         text: 'text-left',
         card: 'text-center bg-bgSecondary border-transparent '
@@ -16,7 +16,9 @@ export default function FormInput({id, text, placeholder, type='text', value='',
                 type={type} 
                 width={width}
                 maxLength={maxLength}
-                className="hidden" />
+                pattern={pattern}
+                min={min}
+                max={max} />
         </div>
     )
 }

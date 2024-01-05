@@ -12,7 +12,7 @@ function Welcome() {
         </h1>
       </header>
       <div className="mt-20 flex flex-col items-center justify-center gap-4">
-        <Button type="primary">Log in</Button>
+        <Button to="/login" type="primary">Log in</Button>
         <Link to="/register" className="uppercase text-primary text-xl">Sign up</Link>
       </div>
     </div>

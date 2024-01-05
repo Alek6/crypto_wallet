@@ -1,7 +1,8 @@
-export default function Input({id, placeholder, autoComplete='off', type='text', value='', width='large', maxLength=''}) {
+export default function Input({id, placeholder, autoComplete='off', type='text', value='', width='large', maxLength='', min='', max='', pattern}) {
     const measures = {
-        large: 'w-full',
-        short: 'w-[50%]'
+        large: 'py-2 px-4 w-full text-text',
+        short: 'py-2 px-4 w-[50%] text-text',
+        code: 'w-10 h-10 px-3 py-1 text-xl text-center text-primary'
     };
 
     return (
@@ -13,7 +14,10 @@ export default function Input({id, placeholder, autoComplete='off', type='text',
             placeholder={placeholder}
             defaultValue={value}
             maxLength={maxLength}
-            className={"py-2 px-4 border text-text border-gray-500 rounded-md mt-2 focus:border-primary " + measures[width]}
+            min={min}
+            max={max}
+            pattern={pattern}
+            className={"border border-gray-500 rounded-md mt-2 focus:border-primary " + measures[width]}
             />
     )
 }
