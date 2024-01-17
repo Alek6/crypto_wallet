@@ -15,7 +15,7 @@ export default function Wallet() {
                 <AmountDashboard amount="1.234" cryptoAmount="0,000043"/>
                 <div className="flex flex-col">
                     <TransactionsHeader/>
-                    <TransactionList/>
+                    <TransactionList num=""/>
                 </div>
                 <div className="flex p-4 justify-around gap-x-4 mt-6">
                     <Link to="/wallet/send" className="flex flex-col justify-content items-center w-[50%]">

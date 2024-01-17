@@ -8,6 +8,7 @@ import UploadDocuments from "@pages/Register/UploadDocuments";
 import Login from "@pages/Login/Login";
 import OTP from "@pages/Login/OTP";
 import Wallet from "@pages/Wallet/Wallet";
+import Movements from "@pages/Wallet/Movements";
 import Send from "@pages/Wallet/Send";
 import Receive from "@pages/Wallet/Receive";
 
@@ -56,10 +57,10 @@ const router = createBrowserRouter([
                 path: '/wallet',
                 element: <Wallet/>
             },
-            /*{
-                path: '/movements',
+            {
+                path: '/wallet/movements',
                 element: <Movements/>
-            },*/
+            },
             {
                 path: '/wallet/send',
                 element: <Send/>
