@@ -7,6 +7,8 @@ import UserData from "@pages/Register/UserData";
 import UploadDocuments from "@pages/Register/UploadDocuments";
 import Login from "@pages/Login/Login";
 import OTP from "@pages/Login/OTP";
+import Wallet from "@pages/Wallet/Wallet";
+import Send from "@pages/Wallet/Send";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +45,28 @@ const router = createBrowserRouter([
                 path: '/login/otp',
                 element: <OTP/>
             }
+        ]
+    },
+    {
+        path: '/wallet',
+        element: <Root/>,
+        children: [
+            {
+                path: '/wallet',
+                element: <Wallet/>
+            },
+            /*{
+                path: '/movements',
+                element: <Movements/>
+            },*/
+            {
+                path: '/wallet/send',
+                element: <Send/>
+            },
+            /*{
+                path: '/receive',
+                element: <Receive/>
+            }*/
         ]
     }
 ]);
