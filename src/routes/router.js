@@ -9,6 +9,7 @@ import Login from "@pages/Login/Login";
 import OTP from "@pages/Login/OTP";
 import Wallet from "@pages/Wallet/Wallet";
 import Send from "@pages/Wallet/Send";
+import Receive from "@pages/Wallet/Receive";
 
 const router = createBrowserRouter([
     {
@@ -63,10 +64,10 @@ const router = createBrowserRouter([
                 path: '/wallet/send',
                 element: <Send/>
             },
-            /*{
-                path: '/receive',
+            {
+                path: '/wallet/receive',
                 element: <Receive/>
-            }*/
+            }
         ]
     }
 ]);
