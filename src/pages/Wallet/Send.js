@@ -1,9 +1,12 @@
-import MainLayout from "../../layouts/MainLayout";
+import MainLayout from "@layouts/MainLayout";
+import Header from "@molecules/Header";
+import FormSend from "@organisms/FormSend";
 
 export default function Send() {
     return (
         <MainLayout>
-            <h1>Wallet Send</h1>
+            <Header type="action" title="Send" mt="lg"/>
+            <FormSend/>
         </MainLayout>
     )
 }

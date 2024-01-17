@@ -1,6 +1,7 @@
 import MainLayout from '@layouts/MainLayout';
 import { Link } from 'react-router-dom';
 import AmountDashboard from "@atoms/AmountDasboard";
+import Header from "@molecules/Header";
 import TransactionsHeader from "@molecules/TransactionsHeader";
 import TransactionList from "@organisms/TransactionList";
 import Send from "@icons/Send";
@@ -10,6 +11,7 @@ export default function Wallet() {
     return (
         <>
             <MainLayout>
+                <Header type="main" />
                 <AmountDashboard amount="1.234" cryptoAmount="0,000043"/>
                 <div className="flex flex-col">
                     <TransactionsHeader/>
