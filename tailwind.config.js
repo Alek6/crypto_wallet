@@ -11,7 +11,9 @@ module.exports = {
         secondary: "#E8B113",
         text: "#888",
         pageTitle: "#313131",
-        pageTitleDark: "#fff"
+        pageTitleDark: "#fff",
+        sent: "#FF5D5D",
+        received: "#08A042"
       },
       backgroundColor: {
         bgLight: "#f6f6f9",
