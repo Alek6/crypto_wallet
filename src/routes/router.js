@@ -7,7 +7,7 @@ import UserData from "@pages/Register/UserData";
 import UploadDocuments from "@pages/Register/UploadDocuments";
 import Login from "@pages/Login/Login";
 import OTP from "@pages/Login/OTP";
-import Wallet from "@pages/Wallet/Wallet";
+import Home from "@pages/Wallet/Home";
 import Movements from "@pages/Wallet/Movements";
 import Send from "@pages/Wallet/Send";
 import Receive from "@pages/Wallet/Receive";
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/wallet',
-                element: <Wallet/>
+                element: <Home/>
             },
             {
                 path: '/wallet/movements',
