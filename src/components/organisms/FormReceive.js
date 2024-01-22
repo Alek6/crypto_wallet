@@ -74,7 +74,7 @@ export default function FormReceive() {
                 <FormInput id="withdrawal-amount" text="Wallet Address" placeholder="shd9uqwd7jekwu6end5n" type="text" maxLength="25" required={true} />
             </div>
             <div className="text-center flex flex-col items-center mb-6">
-                <Button to="/wallet" type="primary">copy link</Button>
+                <Button to="" type="primary">copy link</Button>
             </div>
         </form>
     )

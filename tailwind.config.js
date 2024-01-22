@@ -13,7 +13,8 @@ module.exports = {
         pageTitle: "#313131",
         pageTitleDark: "#fff",
         sent: "#FF5D5D",
-        received: "#08A042"
+        received: "#08A042",
+        inactive: "#E5E7EB"
       },
       backgroundColor: {
         bgLight: "#f6f6f9",

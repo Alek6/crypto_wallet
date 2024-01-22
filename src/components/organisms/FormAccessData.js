@@ -18,8 +18,6 @@ export default function FormAccessData() {
                     text="Confirm password"
                     placeholder="Confirm your password"
                 />
-                {/*<FormInput id="password" text="Password" placeholder="Enter your password" type="password" autoComplete="new-password" required={true} />*/}
-                {/*<FormInput id="confirm-password" text="Confirm your password" placeholder="Confirm your password" type="password" autoComplete="new-password" required={true} />*/}
             </div>
             <div className="text-center flex flex-col items-center mb-6">
                 <Button to="/register/user-data" type="primary">next</Button>
