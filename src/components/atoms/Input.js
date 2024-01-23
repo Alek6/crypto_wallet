@@ -1,4 +1,4 @@
-export default function Input({id, placeholder, autoComplete='off', type='text', value='', width='large', maxLength='', min='', max='', pattern}) {
+export default function Input({id, placeholder, autoComplete='off', type='text', value='', width='large', maxLength='', min='', max='', pattern, disabled}) {
     const measures = {
         large: 'py-2 px-4 w-full text-text',
         short: 'py-2 px-4 w-[50%] text-text',
@@ -17,6 +17,7 @@ export default function Input({id, placeholder, autoComplete='off', type='text',
             min={min}
             max={max}
             pattern={pattern}
+            disabled={disabled}
             className={"border border-gray-500 rounded-md mt-2 focus:border-primary " + measures[width]}
             />
     )

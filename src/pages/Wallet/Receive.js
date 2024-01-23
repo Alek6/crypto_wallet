@@ -4,8 +4,7 @@ import FormReceive from "@organisms/FormReceive";
 
 export default function Receive() {
     return (
-        <MainLayout>
-            <Header type="action" title="Receive" mt="lg"/>
+        <MainLayout header={<Header type="action" title="Receive" mt="lg" backTo="/wallet"/>}>
             <FormReceive/>
         </MainLayout>
     )

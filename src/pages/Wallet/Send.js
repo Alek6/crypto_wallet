@@ -4,8 +4,7 @@ import FormSend from "@organisms/FormSend";
 
 export default function Send() {
     return (
-        <MainLayout>
-            <Header type="action" title="Send" mt="lg"/>
+        <MainLayout header={<Header type="action" title="Send" mt="lg" backTo="/wallet"/>}>
             <FormSend/>
         </MainLayout>
     )

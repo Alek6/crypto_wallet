@@ -12,6 +12,8 @@ import Movements from "@pages/Wallet/Movements";
 import Send from "@pages/Wallet/Send";
 import Receive from "@pages/Wallet/Receive";
 import Market from "@pages/Market/Market";
+import Buy from "@pages/Market/Buy";
+import Sell from "@pages/Market/Sell";
 
 const router = createBrowserRouter([
     {
@@ -79,6 +81,14 @@ const router = createBrowserRouter([
             {
                 path: '/market',
                 element: <Market/>
+            },
+            {
+                path: '/market/buy',
+                element: <Buy/>
+            },
+            {
+                path: '/market/sell',
+                element: <Sell/>
             },
         ]
     }

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Back from "@icons/Back";
 
-export default function Header({type, title, message='Welcome, ', mt}) {
+export default function Header({type, title, message='Welcome, ', mt, backTo=''}) {
     function renderPageTitle() {
         if (title) {
             let styles = {
@@ -36,7 +36,7 @@ export default function Header({type, title, message='Welcome, ', mt}) {
     } else if (type === 'action') {
         return (
             <header className="flex justify-between mb-8">
-                <Link to="/wallet">
+                <Link to={backTo}>
                     <button className="flex justify-center shadow-lg rounded-full w-full mb-2">
                         <Back/>
                     </button>
