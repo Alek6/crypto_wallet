@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Back from "@icons/Back";
 
-export default function Header({type, title, message='Welcome', mt}) {
+export default function Header({type, title, message='Welcome, ', mt}) {
     function renderPageTitle() {
         if (title) {
             let styles = {
@@ -27,8 +27,8 @@ export default function Header({type, title, message='Welcome', mt}) {
         return (
             <header className="flex justify-between mb-8">
                     <div className="felx flex-col">
-                        <h1 className="text-4xl text-pageTitle font-bold">Wallet</h1>
-                        <h2 className="text-2xl text-text font-light">Welcome, <span className="font-semibold">Arnold</span></h2>
+                        <h1 className="text-4xl text-pageTitle font-bold">{title}</h1>
+                        <h2 className="text-2xl text-text font-light">{message} <span className="font-semibold">Arnold</span></h2>
                     </div>
                     <img className="h-12 w-12" src="/assets/Arnold.png" alt="user"/>
             </header>

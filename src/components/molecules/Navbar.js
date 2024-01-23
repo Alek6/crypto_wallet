@@ -11,7 +11,7 @@ export default function Navbar() {
                 icon={<Wallet fill="fill-white"/>} 
                 text="WALLET"/>
             <NavLink 
-                to="/wallet/send" 
+                to="/market" 
                 icon={<Market fill="fill-white"/>} 
                 text="MARKET"/>
             <NavLink 

@@ -2,13 +2,32 @@ import ArrowDown from "@icons/ArrowDown";
 import ArrowUp from "@icons/ArrowUp";
 
 export default function Transaction({type, date, amount, btc}) {
+    let amountColor = {
+        'Received': 'text-received',
+        'Sent': 'text-sent'
+    }
+    
     return (
-        (type === 'Received') ? 
+        <li className="flex">
+            {(type === 'Received') ? <ArrowDown fill="fill-received"/> : <ArrowUp fill="fill-sent"/>}
+            <div className="flex justify-between w-full ml-2">
+                <div className="flex flex-col">
+                        <h2 className="text-pageTitle text-xl font-semibold">{type}</h2>
+                        <p className="text-text font-light">{date}</p>
+                </div>
+                <div className="flex flex-col">
+                    <h2 className={"text-xl font-semibold " + amountColor[type]}>{(type === 'Received') ? '+' : '-'} {amount} USD</h2>
+                    <p className="flex justify-end text-text font-light">{btc} BTC</p>
+                </div>
+            </div>
+        </li>
+
+        /*(type === 'Received') ? 
         <li className="flex">
             <ArrowDown fill="fill-received" />
             <div className="flex justify-between w-full ml-2">
                 <div className="flex flex-col">
-                        <h2 className="text-xl font-semibold">{type}</h2>
+                        <h2 className="text-pageTitle text-xl font-semibold">{type}</h2>
                         <p className="text-text font-light">{date}</p>
                 </div>
                 <div className="flex flex-col">
@@ -22,7 +41,7 @@ export default function Transaction({type, date, amount, btc}) {
             <ArrowUp fill="fill-sent" />
             <div className="flex justify-between w-full ml-2">
                 <div className="flex flex-col">
-                        <h2 className="text-xl font-semibold">{type}</h2>
+                        <h2 className="text-pageTitle text-xl font-semibold">{type}</h2>
                         <p className="text-text font-light">{date}</p>
                 </div>
                 <div className="flex flex-col">
@@ -30,6 +49,6 @@ export default function Transaction({type, date, amount, btc}) {
                     <p className="flex justify-end text-text font-light">{btc} BTC</p>
                 </div>
             </div>
-        </li>
+        </li>*/
     )
 }
