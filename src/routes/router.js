@@ -17,6 +17,7 @@ import Sell from "@pages/Market/Sell";
 import Profile from "@pages/Profile/Profile";
 import EditUserData from "@pages/Profile/EditUserData";
 import EditPassword from "@pages/Profile/EditPassword";
+import Support from "@pages/Profile/Support";
 
 const router = createBrowserRouter([
     {
@@ -110,6 +111,10 @@ const router = createBrowserRouter([
             {
                 path: '/profile/edit-password',
                 element: <EditPassword/>
+            },
+            {
+                path: '/profile/support',
+                element: <Support/>
             }
         ]
     }
