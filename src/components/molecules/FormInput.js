@@ -19,6 +19,7 @@ export default function FormInput({id, text, placeholder, type='text', value='',
                 pattern={pattern}
                 min={min}
                 max={max}
+                value={value}
                 disabled={disabled} />
         </div>
     )
