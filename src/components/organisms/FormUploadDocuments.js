@@ -8,7 +8,7 @@ export default function FormUploadDocuments() {
                 <InputUploadFile htmlFor="document" label="Upload your ID" message="Click to upload your ID card" />
                 <InputUploadFile htmlFor="photo" label="Upload your Photo" message="Click to upload your photo" />
             </div>
-            <div className="text-center flex flex-col items-center mb-6">
+            <div className="text-center flex flex-col items-center">
                 <Button to="/login" type="primary">next</Button>
             </div>
         </form>

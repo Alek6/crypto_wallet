@@ -14,7 +14,7 @@ export default function FormUserData() {
                     <FormInput id="postal-code" text="Postal code" placeholder="Insert your postal code" type="number" maxLength="5" required={true} />
                 </div>
             </div>
-            <div className="text-center flex flex-col items-center mb-6">
+            <div className="text-center flex flex-col items-center">
                 <Button to="/register/upload-documents" type="primary">next</Button>
             </div>
         </form>

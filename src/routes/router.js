@@ -14,6 +14,7 @@ import Receive from "@pages/Wallet/Receive";
 import Market from "@pages/Market/Market";
 import Buy from "@pages/Market/Buy";
 import Sell from "@pages/Market/Sell";
+import Profile from "@pages/Profile/Profile";
 
 const router = createBrowserRouter([
     {
@@ -89,6 +90,16 @@ const router = createBrowserRouter([
             {
                 path: '/market/sell',
                 element: <Sell/>
+            },
+        ]
+    },
+    {
+        path: '/profile',
+        element: <Root/>,
+        children: [
+            {
+                path: '/profile',
+                element: <Profile/>
             },
         ]
     }

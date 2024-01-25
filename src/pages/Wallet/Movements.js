@@ -5,8 +5,7 @@ import TransactionList from "@organisms/TransactionList";
 
 export default function Movements() {
     return (
-        <MainLayout>
-            <Header type="action" title="Movements" mt="lg"/>
+        <MainLayout header={<Header type="action" title="Movements" mt="lg" backTo="/wallet"/>}>
                 <FilterHeader/>
                 <TransactionList num="3"/>
         </MainLayout>

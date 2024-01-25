@@ -21,7 +21,8 @@ module.exports = {
         bgDark: "#313131",
         bgPrimary: "#336EC9",
         bgSecondary: "#E8B113",
-        bgTertiary: "transparent"
+        bgTertiary: "transparent",
+        bgDanger: "#F93838"
       }
     },
   },
