@@ -4,7 +4,7 @@ import FormInput from '@molecules/FormInput';
 export default function FormReceive() {
     return (
         <form className="flex flex-1 flex-col justify-around gap-5">
-            <div className="flex flex-col items-center justify-center gap-5 mt-6">
+            <div className="flex flex-col items-center justify-center gap-5">
                 <div className="flex justify-center">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
     width="200" height="200" viewBox="0 0 556.000000 556.000000"
