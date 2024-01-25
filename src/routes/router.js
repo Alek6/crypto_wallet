@@ -16,6 +16,7 @@ import Buy from "@pages/Market/Buy";
 import Sell from "@pages/Market/Sell";
 import Profile from "@pages/Profile/Profile";
 import EditUserData from "@pages/Profile/EditUserData";
+import EditPassword from "@pages/Profile/EditPassword";
 
 const router = createBrowserRouter([
     {
@@ -106,6 +107,10 @@ const router = createBrowserRouter([
                 path: '/profile/edit-user-data',
                 element: <EditUserData/>
             },
+            {
+                path: '/profile/edit-password',
+                element: <EditPassword/>
+            }
         ]
     }
 ]);
