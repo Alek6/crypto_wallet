@@ -40,7 +40,7 @@ export default function TransactionList({num}) {
         )
     } else {
         return (
-            <div className="overflow-y-scroll max-h-96 pr-1.5">
+            <div className="overflow-y-scroll max-h-96 pr-1.5 mt-10">
                 <ul className="flex flex-col gap-y-3 py-1 bg-[#f2f2f2]">
                     {
                         transactions.map( tr => {

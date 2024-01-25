@@ -5,7 +5,7 @@ import Profile from "@icons/Profile";
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-between w-full rounded-[30px] bg-bgPrimary px-8 py-4 text-sm shadow-lg">
+        <nav className="flex gap-x-9 fixed bottom-8 rounded-[30px] bg-bgPrimary px-8 py-4 text-sm shadow-lg">
             <NavLink 
                 to="/wallet" 
                 icon={<Wallet fill="fill-white"/>} 

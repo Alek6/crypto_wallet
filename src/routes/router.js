@@ -18,6 +18,7 @@ import Profile from "@pages/Profile/Profile";
 import EditUserData from "@pages/Profile/EditUserData";
 import EditPassword from "@pages/Profile/EditPassword";
 import Support from "@pages/Profile/Support";
+import FAQ from "@pages/Profile/FAQ";
 
 const router = createBrowserRouter([
     {
@@ -115,6 +116,10 @@ const router = createBrowserRouter([
             {
                 path: '/profile/support',
                 element: <Support/>
+            },
+            {
+                path: '/profile/faq',
+                element: <FAQ/>
             }
         ]
     }

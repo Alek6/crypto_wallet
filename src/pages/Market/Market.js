@@ -10,8 +10,8 @@ export default function Market() {
         <>
             <MainLayout header={<Header type="main" title="Market" />} >
                 <AmountDashboard amount="1.234" cryptoAmount="0,000043"/>
-                <div className="flex flex-col">
-                    
+                <div className="flex flex-col mt-10">
+                    <img src="/assets/chart.png" alt="Graph"/>
                 </div>
                 <div className="flex p-4 justify-around gap-x-4 mt-6">
                     <Link to="/market/buy" className="flex flex-col justify-content items-center w-[50%]">
